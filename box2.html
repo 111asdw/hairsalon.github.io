@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.parent{
+			width: 100%;
+			height: 500px;
+		}
+		.container{
+			width: 75%;
+			margin: auto;
+			display: flex;
+			justify-content: space-around;
+			padding-top: 100px;
+		}
+		.child1{
+			width: 50%;
+		}
+		.child1 .box{
+			width: 500px;
+			height: 400px;
+			background-color: red;
+		}
+		.child2{
+			width: 50%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.child2 .box1{
+			width: 45%;
+			height: 195px;
+			background-color: black;
+		}
+		.child2 .box2{
+			width: 45%;
+			height: 195px;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+<div class="parent">
+	<div class="container">
+		<div class="child1">
+			<div class="box"></div>
+		</div>
+		<div class="child2">
+			<div class="box1"></div>
+			<div class="box1"></div>
+			<div class="box1"></div>
+			<div class="box1"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
